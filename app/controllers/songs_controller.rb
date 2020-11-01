@@ -29,7 +29,7 @@ class SongsController < ApplicationController
   private
 
   def song_find
-    @song = Song.find(params[:id])
+    @song = Song.find_by(params[:id])
   end
 
   def strong_params(*args)

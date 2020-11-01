@@ -25,7 +25,7 @@ class GenresController < ApplicationController
   private
 
   def genre_find
-    @genre = Genre.find(params[:id])
+    @genre = Genre.find_by(params[:id])
   end
 
   def strong_params(*args)

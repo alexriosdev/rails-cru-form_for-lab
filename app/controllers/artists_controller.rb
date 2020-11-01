@@ -25,7 +25,7 @@ class ArtistsController < ApplicationController
   private
 
   def artist_find
-    @artist = Artist.find(params[:id])
+    @artist = Artist.find_by(params[:id])
   end
 
   def strong_params(*args)
